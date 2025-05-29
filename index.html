@@ -342,7 +342,7 @@
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
-   <header class="fixed top-0 left-0 right-0 glass-effect shadow-lg z-50 border-b border-gray-200/20">
+   <header class="fixed top-0 left-0 right-0 glass-effect shadow-lg z-50 ">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
@@ -425,7 +425,7 @@
 
 
     <!-- Hero Section -->
-    <section class="hero-gradient min-h-screen relative flex items-center">
+    <section class="hero-gradient min-h-screen relative flex items-center mb-8">
         <!-- Orbes flotantes de fondo -->
         <div class="floating-orb"></div>
         <div class="floating-orb"></div>
@@ -488,17 +488,7 @@
                         </button>
                     </div>
                     
-                    <!-- Testimonial rápido -->
-                    <div class="mt-8 flex items-center justify-center lg:justify-start">
-                        <div class="flex -space-x-2">
-                            <div class="w-10 h-10 rounded-full bg-gradient-to-r from-pink-400 to-purple-400 border-2 border-white"></div>
-                            <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-400 to-teal-400 border-2 border-white"></div>
-                            <div class="w-10 h-10 rounded-full bg-gradient-to-r from-green-400 to-yellow-400 border-2 border-white"></div>
-                        </div>
-                        <p class="ml-4 text-blue-200 text-sm">
-                            "Increíble apoyo y resultados" - Ana, CEO StartupTech
-                        </p>
-                    </div>
+                   
                 </div>
                 
                 <!-- Tarjeta flotante interactiva -->
@@ -599,7 +589,7 @@
         </div>
         
         <!-- Indicador de scroll -->
-        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white opacity-70">
+        <div class="absolute bottom-12 left-1/2 transform -translate-x-1/2 text-white opacity-70">
             <div class="flex flex-col items-center animate-bounce">
                 <span class="text-sm mb-2">Descubre más</span>
                 <i class="fas fa-chevron-down text-xl"></i>
@@ -608,40 +598,41 @@
     </section>
 
     <!-- Stats Section -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <div class="stat-card p-6 text-center">
-                    <div class="text-4xl font-bold text-indigo-600 mb-2">200+</div>
-                    <p class="text-gray-600">Emprendedores apoyados</p>
-                    <div class="mt-4 text-indigo-500 text-3xl">
-                        <i class="fas fa-users"></i>
-                    </div>
-                </div>
-                <div class="stat-card p-6 text-center">
-                    <div class="text-4xl font-bold text-purple-600 mb-2">95%</div>
-                    <p class="text-gray-600">Tasa de éxito</p>
-                    <div class="mt-4 text-purple-500 text-3xl">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                </div>
-                <div class="stat-card p-6 text-center">
-                    <div class="text-4xl font-bold text-indigo-600 mb-2">50+</div>
-                    <p class="text-gray-600">Especialistas disponibles</p>
-                    <div class="mt-4 text-indigo-500 text-3xl">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                </div>
-                <div class="stat-card p-6 text-center">
-                    <div class="text-4xl font-bold text-purple-600 mb-2">3</div>
-                    <p class="text-gray-600">Hitos clave para el éxito</p>
-                    <div class="mt-4 text-purple-500 text-3xl">
-                        <i class="fas fa-flag-checkered"></i>
-                    </div>
-                </div>
-            </div>
+    <section class="py-16 bg-white mt-4">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="stat-card p-6 text-center">
+        <div class="text-4xl font-bold text-indigo-600 mb-2">+8 años</div>
+        <p class="text-gray-600">de experiencia en emprendimiento</p>
+        <div class="mt-4 text-indigo-500 text-3xl">
+          <i class="fas fa-briefcase"></i>
         </div>
-    </section>
+      </div>
+      <div class="stat-card p-6 text-center">
+        <div class="text-4xl font-bold text-purple-600 mb-2">300+</div>
+        <p class="text-gray-600">ideas validadas con éxito</p>
+        <div class="mt-4 text-purple-500 text-3xl">
+          <i class="fas fa-lightbulb"></i>
+        </div>
+      </div>
+      <div class="stat-card p-6 text-center">
+        <div class="text-4xl font-bold text-indigo-600 mb-2">20+</div>
+        <p class="text-gray-600">sectores de negocio atendidos</p>
+        <div class="mt-4 text-indigo-500 text-3xl">
+          <i class="fas fa-industry"></i>
+        </div>
+      </div>
+      <div class="stat-card p-6 text-center">
+        <div class="text-4xl font-bold text-purple-600 mb-2">98%</div>
+        <p class="text-gray-600">de satisfacción en asesorías</p>
+        <div class="mt-4 text-purple-500 text-3xl">
+          <i class="fas fa-smile-beam"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- Services Section -->
     <section id="services" class="py-20 bg-gray-50">
@@ -915,98 +906,221 @@
             </div>
         </div>
     </section>
+    <section class="relative bg-gradient-to-br from-blue-50 via-indigo-50 to-blue-50 py-24 overflow-hidden" style="font-family: 'Barlow', sans-serif;">
+    <div class="absolute inset-0">
+        <div class="absolute top-20 -left-20 w-96 h-96 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-40 animate-blob"></div>
+        <div class="absolute top-60 right-0 w-96 h-96 bg-indigo-200 rounded-full mix-blend-multiply filter blur-3xl opacity-40 animate-blob animation-delay-2000"></div>
+        <div class="absolute bottom-32 left-1/3 w-96 h-96 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-40 animate-blob animation-delay-4000"></div>
+    </div>
+
+    <div class="relative container mx-auto px-6 lg:px-16">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div class="space-y-8">
+                <h2 class="text-4xl md:text-5xl font-bold">
+                    <span class="bg-gradient-to-r from-blue-600 to-teal-500 bg-clip-text text-transparent">
+                        ¿Listo para impulsar tu negocio con MicroAliados?
+                    </span>
+                </h2>
+
+                <p class="text-xl text-gray-600">
+                    Estamos aquí para ayudarte a hacer crecer tu emprendimiento. Contáctanos y descubre cómo MicroAliados puede marcar la diferencia.
+                </p>
+
+                <div class="grid sm:grid-cols-2 gap-6">
+                    <!-- Email -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="bg-blue-100 w-max p-3 rounded-lg mb-4">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-1">Correo Electrónico</h3>
+                        <a href="mailto:contacto@microaliados.com" class="text-blue-600 hover:text-blue-800 transition-colors">
+                            contacto&#64;microaliados.com
+                        </a>
+                    </div>
+
+                    <!-- Teléfono -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="bg-teal-100 w-max p-3 rounded-lg mb-4">
+                            <svg class="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-1">Teléfono</h3>
+                        <a href="tel:+51987654321" class="text-teal-600 hover:text-teal-800 transition-colors">+51 987 654 321</a>
+                    </div>
+
+                    <!-- Dirección -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="bg-purple-100 w-max p-3 rounded-lg mb-4">
+                            <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-1">Oficina Central</h3>
+                        <p class="text-gray-600">Jr. Progreso 456, Trujillo, Perú</p>
+                    </div>
+
+                    <!-- Horario -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="bg-indigo-100 w-max p-3 rounded-lg mb-4">
+                            <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-1">Horario de Atención</h3>
+                        <p class="text-gray-600">Lun-Vie: 8am - 5pm<br>Sab: 9am - 1pm</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulario de contacto -->
+            <div class="bg-white rounded-2xl shadow-2xl overflow-hidden">
+                <div class="bg-gradient-to-r from-purple-600 to-blue-500 p-6 text-white">
+                    <h3 class="text-2xl font-bold">Contáctanos</h3>
+                    <p class="opacity-90">Te responderemos en menos de 24 horas</p>
+                </div>
+                <form class="p-6 space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 mb-2">Nombre completo</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 mb-2">Correo electrónico</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="subject" class="block text-gray-700 mb-2">Asunto</label>
+                        <input type="text" id="subject" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-700 mb-2">Mensaje</label>
+                        <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-gradient-to-r from-purple-600 to-blue-500 text-white py-4 rounded-lg font-semibold text-lg hover:scale-105 transition-transform shadow-lg">
+                        Enviar Mensaje
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
 
     <!-- CTA Section -->
     <section class="py-20 hero-gradient">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">¿Listo para transformar tu idea en realidad?</h2>
-            <p class="text-indigo-100 text-xl max-w-2xl mx-auto mb-10">Únete a nuestra comunidad de emprendedores exitosos y comienza tu viaje hoy mismo.</p>
-            
-            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-                <button class="px-8 py-4 bg-white text-indigo-700 font-bold rounded-lg hover:bg-gray-100 transition">Comenzar ahora</button>
-                <button class="border-gradient-btn px-8 py-4 text-white font-bold">Programar consulta</button>
-            </div>
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+            Da el siguiente paso con Micro Aliados
+        </h2>
+        <p class="text-indigo-100 text-xl max-w-2xl mx-auto mb-10">
+            Conecta con expertos, accede a recursos clave y haz crecer tu emprendimiento desde hoy mismo.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+            <button class="px-8 py-4 bg-white text-indigo-700 font-bold rounded-lg hover:bg-gray-100 transition">
+                Únete ahora
+            </button>
+            <button class="border-gradient-btn px-8 py-4 text-white font-bold">
+                Agenda una consulta
+            </button>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-16">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <div class="flex items-center mb-6">
-                        <div class="w-10 h-10 gradient-btn rounded-lg flex items-center justify-center mr-3">
-                            <i class="fas fa-lightbulb text-white text-xl"></i>
-                        </div>
-                        <span class="text-xl font-bold">Micro Aliados</span>
-                    </div>
-                    <p class="text-gray-400 mb-6">Ayudando a emprendedores a transformar ideas en negocios exitosos desde 2023.</p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-indigo-600 transition">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-indigo-600 transition">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-indigo-600 transition">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-indigo-600 transition">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div>
-                    <h4 class="font-bold text-lg mb-6">Enlaces rápidos</h4>
-                    <ul class="space-y-3">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Inicio</a></li>
-                        <li><a href="#services" class="text-gray-400 hover:text-white transition">Servicios</a></li>
-                        <li><a href="#how-it-works" class="text-gray-400 hover:text-white transition">Cómo funciona</a></li>
-                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition">Testimonios</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Blog</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="font-bold text-lg mb-6">Servicios</h4>
-                    <ul class="space-y-3">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Validación de Ideas</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Lanzamiento Estratégico</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Crecimiento y Escalamiento</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Mentorías Personalizadas</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Talleres para Emprendedores</a></li>
-                    </ul>
-                </div>
-                
-                <div id="contact">
-                    <h4 class="font-bold text-lg mb-6">Contacto</h4>
-                    <ul class="space-y-4">
-                        <li class="flex items-start">
-                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-gray-400"></i>
-                            <span class="text-gray-400">Av. Emprendimiento 123, Lima, Perú</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-phone mt-1 mr-3 text-gray-400"></i>
-                            <span class="text-gray-400">+51 999 888 777</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-envelope mt-1 mr-3 text-gray-400"></i>
-                            <span class="text-gray-400">hola@microaliados.com</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-clock mt-1 mr-3 text-gray-400"></i>
-                            <span class="text-gray-400">Lun-Vie: 9am - 6pm</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="border-t border-gray-800 mt-16 pt-8 text-center text-gray-500">
-                <p>&copy; 2023 Micro Aliados. Todos los derechos reservados.</p>
-            </div>
+   <footer class="bg-black text-white py-20">
+  <div class="container mx-auto px-6 md:px-12">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+      
+      <!-- Logo y Descripción -->
+      <div>
+        <div class="flex items-center mb-6">
+          <div class="w-12 h-12 gradient-btn rounded-lg flex items-center justify-center mr-3">
+            <i class="fas fa-lightbulb text-white text-2xl"></i>
+          </div>
+          <span class="text-2xl font-bold">Micro Aliados</span>
         </div>
-    </footer>
+        <p class="text-gray-400 mb-6 leading-relaxed">
+          Ayudamos a emprendedores a transformar ideas en negocios exitosos desde 2025.
+        </p>
+        <div class="flex space-x-4">
+          <a href="#" aria-label="Facebook" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-indigo-500 transition">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" aria-label="Instagram" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-500 transition">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" aria-label="LinkedIn" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="#" aria-label="YouTube" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Enlaces Rápidos -->
+      <div>
+        <h4 class="text-xl font-semibold mb-6 border-b border-gray-700 pb-2">Enlaces rápidos</h4>
+        <ul class="space-y-3 text-gray-400">
+          <li><a href="#" class="hover:text-white transition">Inicio</a></li>
+          <li><a href="#services" class="hover:text-white transition">Servicios</a></li>
+          <li><a href="#how-it-works" class="hover:text-white transition">Cómo funciona</a></li>
+          <li><a href="#testimonials" class="hover:text-white transition">Testimonios</a></li>
+          <li><a href="#" class="hover:text-white transition">Blog</a></li>
+        </ul>
+      </div>
+
+      <!-- Servicios -->
+      <div>
+        <h4 class="text-xl font-semibold mb-6 border-b border-gray-700 pb-2">Servicios</h4>
+        <ul class="space-y-3 text-gray-400">
+          <li><a href="#" class="hover:text-white transition">Validación de Ideas</a></li>
+          <li><a href="#" class="hover:text-white transition">Lanzamiento Estratégico</a></li>
+          <li><a href="#" class="hover:text-white transition">Crecimiento y Escalamiento</a></li>
+          <li><a href="#" class="hover:text-white transition">Mentorías Personalizadas</a></li>
+          <li><a href="#" class="hover:text-white transition">Talleres para Emprendedores</a></li>
+        </ul>
+      </div>
+
+      <!-- Contacto -->
+      <div id="contact">
+        <h4 class="text-xl font-semibold mb-6 border-b border-gray-700 pb-2">Contáctanos</h4>
+        <ul class="space-y-4 text-gray-400 text-sm">
+          <li class="flex items-start">
+            <i class="fas fa-map-marker-alt text-indigo-500 mt-1 mr-3"></i>
+            <span>Av. America Sur 123, Trujillo, Perú</span>
+          </li>
+          <li class="flex items-start">
+            <i class="fas fa-phone text-indigo-500 mt-1 mr-3"></i>
+            <span>+51 999 888 777</span>
+          </li>
+          <li class="flex items-start">
+            <i class="fas fa-envelope text-indigo-500 mt-1 mr-3"></i>
+            <span>hola@microaliados.com</span>
+          </li>
+          <li class="flex items-start">
+            <i class="fas fa-clock text-indigo-500 mt-1 mr-3"></i>
+            <span>Lun - Vie: 9:00am - 6:00pm</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Línea Final -->
+    <div class="border-t border-gray-800 mt-16 pt-6 text-center text-gray-500 text-sm">
+      <p>&copy; 2025 Micro Aliados. Todos los derechos reservados.</p>
+      <span>Diseñado por Sebastián Saavedra y Diogho Baylón</span>
+    </div>
+  </div>
+</footer>
+
 
    <script src="script.js"></script>
      
