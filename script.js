@@ -16,7 +16,7 @@
                 }
             }
         }
-         // Simple scroll animation for sections
+   
         document.addEventListener('DOMContentLoaded', function() {
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
@@ -32,7 +32,7 @@
                 observer.observe(section);
             });
             
-            // Smooth scrolling for anchor links
+     
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
@@ -47,19 +47,19 @@
                 });
             });
         });
-           // Mobile menu toggle
+          
         document.getElementById('mobile-menu-btn').addEventListener('click', function() {
             document.getElementById('mobile-menu').classList.toggle('active');
         });
         
-        // Close mobile menu when clicking a link
+      
         document.querySelectorAll('#mobile-menu a').forEach(link => {
             link.addEventListener('click', () => {
                 document.getElementById('mobile-menu').classList.remove('active');
             });
         });
         
-        // Smooth scrolling
+ 
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -87,7 +87,7 @@
                 }
             }
         }
-         // Simple scroll animation for sections
+    
         document.addEventListener('DOMContentLoaded', function() {
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
@@ -103,7 +103,7 @@
                 observer.observe(section);
             });
             
-            // Smooth scrolling for anchor links
+     
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
@@ -138,7 +138,7 @@
             });
         };
         
-        // Observer para activar animaciones
+
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -150,12 +150,12 @@
             });
         });
         
-        // Observar elementos
+      
         document.querySelectorAll('.animate-fade-in-up, .animate-fade-in-right, .metric-item').forEach(el => {
             observer.observe(el);
         });
         
-        // Efecto de hover en los botones
+ 
         document.querySelectorAll('button').forEach(button => {
             button.addEventListener('mouseenter', function() {
                 this.style.transform = 'translateY(-2px) scale(1.02)';
