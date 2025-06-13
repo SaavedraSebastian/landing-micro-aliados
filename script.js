@@ -165,3 +165,18 @@
                 this.style.transform = 'translateY(0) scale(1)';
             });
         });
+         document.getElementById("contactForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const subject = document.getElementById("subject").value.trim();
+        const message = document.getElementById("message").value.trim();
+
+        const to = "saavedraarroyosebastianalonso@gmail.com"; // Cambia esto por tu correo
+        const body = `Hola,%0D%0A%0D%0AMi nombre es ${name} y mi correo es ${email}.%0D%0A%0D%0A${message}%0D%0A%0D%0ASaludos.`;
+
+        const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(to)}&su=${encodeURIComponent(subject)}&body=${body}`;
+
+        window.open(gmailUrl, '_blank');
+    });
