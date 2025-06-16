@@ -180,3 +180,16 @@
 
         window.open(gmailUrl, '_blank');
     });
+     document.getElementById("video-container").addEventListener("click", function () {
+    const thumbnail = document.getElementById("video-thumbnail");
+    const playButton = document.getElementById("video-play-button");
+    const iframe = document.getElementById("video-iframe");
+
+    // Oculta el thumbnail y botón
+    thumbnail.style.display = "none";
+    playButton.style.display = "none";
+
+    // Muestra el iframe y asigna el src con autoplay
+    iframe.src = "https://www.youtube.com/embed/jb9iHFyk9nk?autoplay=1";
+    iframe.classList.remove("hidden");
+  });
